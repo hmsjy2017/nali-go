@@ -1,7 +1,6 @@
 # Windows
 CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main.exe nali.exe && zip nali-go-windows-x64.zip nali.exe && rm nali.exe
 CGO_ENABLED=0 GOOS=windows GOARCH=386 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main.exe nali.exe && zip nali-go-windows-x86.zip nali.exe && rm nali.exe
-CGO_ENABLED=0 GOOS=windows GOARCH=arm64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main.exe nali.exe && zip nali-go-windows-arm64.zip nali.exe && rm nali.exe
 CGO_ENABLED=0 GOOS=windows GOARCH=arm go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main.exe nali.exe && zip nali-go-windows-arm.zip nali.exe && rm nali.exe
 
 # Linux
