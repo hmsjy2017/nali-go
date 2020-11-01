@@ -12,7 +12,7 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm go build -ldflags "-w -s -X main.githash=$(g
 CGO_ENABLED=0 GOOS=linux GOARCH=mips64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-linux-mips64.zip nali && rm nali
 CGO_ENABLED=0 GOOS=linux GOARCH=mips go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-linux-mips.zip nali && rm nali
 
-# Freebsd
+# FreeBSD
 CGO_ENABLED=0 GOOS=freebsd GOARCH=amd64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-freebsd-amd64.zip nali && rm nali
 CGO_ENABLED=0 GOOS=freebsd GOARCH=386 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-freebsd-386.zip nali && rm nali
 CGO_ENABLED=0 GOOS=freebsd GOARCH=arm64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-freebsd-arm64.zip nali && rm nali
