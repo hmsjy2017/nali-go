@@ -20,12 +20,12 @@ Go语言程序, 可直接在[发布页](https://github.com/Mikubill/nali-go/rele
 Query simple IP address:
 
 ```bash
-➜ nali-go 2.3.6.7 1.1.2.5
+➜ ./nali 2.3.6.7 1.1.2.5
 
 2.3.6.7 [法国 Orange]
 1.1.2.5 [福建省 电信]
 
-➜ nali-go 2001:da8:2:1::2
+➜ ./nali 2001:da8:2:1::2
 
 2001:da8:2:1::2 [中国北京市 教育网(CERNET2N)骨干网-清华大学-郑州大学]
 ```
@@ -33,7 +33,7 @@ Query simple IP address:
 Query IP addresses from `stdin`:
 
 ```bash
-➜  dig github.io +short | nali-go
+➜  dig github.io +short | ./nali
 
 185.199.110.153 [美国 GitHub+Fastly节点]
 185.199.111.153 [美国 GitHub+Fastly节点]
@@ -44,7 +44,7 @@ Query IP addresses from `stdin`:
 Use Nali CLI built-in tools shortcut:
 
 ```bash
-➜ nali-go nslookup ip.sb
+➜ ./nali nslookup ip.sb
 
 Server:         1.0.0.1 [美国 APNIC&CloudFlare 公共 DNS 服务器]
 Address:        1.0.0.1 [美国 APNIC&CloudFlare 公共 DNS 服务器]#53
@@ -57,19 +57,19 @@ Address: 119.9.95.61 [香港 Rackspace Hosting公司]
 Update IP Database:
 
 ```bash
-➜ nali-go update
+➜ ./nali update
 ```
 
 Delete IP Database:
 
 ```bash
-➜ nali-go delete
+➜ ./nali delete
 ```
 
 Check Version:
 
 ```bash
-➜ nali-go version
+➜ ./nali version
 
 NaLi-Go 
 Source: https://github.com/Mikubill/nali-go
