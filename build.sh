@@ -32,3 +32,4 @@ CGO_ENABLED=0 GOOS=netbsd GOARCH=arm go build -ldflags "-w -s -X main.githash=$(
 # Darwin
 CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-darwin-amd64.zip nali && rm nali
 CGO_ENABLED=0 GOOS=darwin GOARCH=386 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-darwin-386.zip nali && rm nali
+CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -ldflags "-w -s -X main.githash=$(git rev-parse HEAD)" . && mv main nali && zip nali-go-darwin-arm64.zip nali && rm nali
